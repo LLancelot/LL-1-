@@ -1,0 +1,28 @@
+FIRST 集：
+FIRST(S)={ # , b , a }
+FIRST(A)={ # , b }
+FIRST(B)={ # , a }
+FIRST(C)={ b , a , c }
+FIRST(D)={ a , c }
+
+FOLLOW 集：
+FOLLOW(S)={ # }
+FOLLOW(A)={ a , # , c }
+FOLLOW(B)={ # }
+FOLLOW(C)={ # }
+FOLLOW(D)={ # }
+
+SELECT 集：
+SELECT(S→AB)={ b , a , # }
+SELECT(S→bC)={ b }
+SELECT(A→#)={ a , # , c }
+SELECT(A→b)={ b }
+SELECT(B→#)={ # }
+SELECT(B→aD)={ a }
+SELECT(C→AD)={ b , a , c }
+SELECT(C→b)={ b }
+SELECT(D→aS)={ a }
+SELECT(D→c)={ c }
+
+不是 LL（1）文法！！
+因为存在相同左部其产生式的SELECT集的交集不为空！

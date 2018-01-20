@@ -1,0 +1,26 @@
+FIRST ¼¯£º
+FIRST(S)={ ( , i }
+FIRST(E)={ ( , i }
+FIRST(A)={ + , # }
+FIRST(T)={ ( , i }
+FIRST(B)={ * , # }
+FIRST(F)={ ( , i }
+
+FOLLOW ¼¯£º
+FOLLOW(S)={ # }
+FOLLOW(E)={ # , ) }
+FOLLOW(A)={ # , ) }
+FOLLOW(T)={ + , # , ) }
+FOLLOW(B)={ + , # , ) }
+FOLLOW(F)={ * , + , # , ) }
+
+SELECT ¼¯£º
+SELECT(S¡úE)={ ( , i }
+SELECT(E¡úTA)={ ( , i }
+SELECT(A¡ú+TA)={ + }
+SELECT(A¡ú#)={ # , ) }
+SELECT(T¡úFB)={ ( , i }
+SELECT(B¡ú*FB)={ * }
+SELECT(B¡ú#)={ + , # , ) }
+SELECT(F¡ú(E))={ ( }
+SELECT(F¡úi)={ i }
